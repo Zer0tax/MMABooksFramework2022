@@ -1,0 +1,25 @@
+﻿/* Author:  LindyStewart
+ * Changes: Eric Robinson L00709820
+ * Date:    10/23/23
+ * Lane Community College CS234 Advanced Programming: C# (.NET)
+ * Lab 3
+ * Purpose: Establish IReadDB
+ */
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MMABooksTools
+{
+    /// <summary>
+    /// IReadDB is part of the "data tier" of the framework.
+    /// It supports reading from the data source.
+    /// </summary>
+    public interface IReadDB
+    {
+        IBaseProps Retrieve(Object key);
+        object RetrieveAll();
+
+    } // end interface IReadDB
+} // end namespace MMABooksTools
